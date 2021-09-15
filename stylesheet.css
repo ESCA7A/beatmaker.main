@@ -1,0 +1,252 @@
+body {
+    background: url("images/background.jpg") repeat-y;
+    background-size: auto 560%;
+    background-position: center;
+    background-position-y: 40%;
+    animation: zoom 30s linear infinite;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.gridSearch {
+  grid-column: 4;
+  grid-row: 2/3;
+  text-align: center;
+  color:rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 1px rgba(0, 0, 0, 0.883),
+    1px 1px 1px rgba(255, 214, 233, 0.883),
+    1px -1px 1px rgba(255, 200, 225, 0.808),
+    -1px 1px 1px rgba(255, 119, 183, 0.76),
+    -1px -1px 1px rgb(0, 0, 0); 
+}
+
+.gridHeader {
+  grid-column: 2/4;
+  grid-row: 1;
+  text-align: center;
+}
+
+.gridLeftBtn {
+  grid-column: 1;
+  grid-row: 2/3;
+}
+
+.gridRightBtn {
+    grid-column: 4;
+    grid-row: 2/4;
+    grid-template-rows: auto;
+}
+
+/*текст из интернета*/
+
+H1 {
+  display: inline-block;
+  transition: all 1s;
+  letter-spacing: auto;
+}
+
+H1:after {
+  content: "";
+  display: block;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  margin: auto;
+  border-bottom: 4px solid rgb(255, 210, 247);
+  bottom: -5px;
+  transition: all 1s;
+}
+
+H1:hover:after {
+  width: 0%;
+  border-bottom-width: 1px;
+}
+
+.visitCard {
+  margin-top: -70px;
+  font-size: 100%;
+}
+
+
+.line-height {
+    line-height: 2;
+}
+
+.header {
+  word-spacing: 20px;  
+  text-align: center;
+    font-size: 100%;
+    color:rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 1px rgba(0, 0, 0, 0.883),
+    1px 1px 1px rgba(255, 214, 233, 0.883),
+    1px -1px 1px rgba(255, 200, 225, 0.808),
+    -1px 1px 1px rgba(255, 119, 183, 0.76),
+    -1px -1px 1px rgb(212, 154, 154); 
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    font-size: 3px;
+    -webkit-text-stroke: 3px rgba(255, 77, 225, 0.151);
+}
+
+
+
+/* css из интернета */
+
+.currentHeader {
+
+  line-height: 40px;
+  letter-spacing: 5px;
+  padding: 50px;
+  
+    font-size: 300%;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 
+      1px 1px 1px rgb(255 255 255 / 50%), 
+      1px 1px 1px rgb(255 214 233 / 20%), 
+      1px -1px 1px rgb(255 200 225 / 20%), 
+      -1px 1px 1px rgb(255 119 183 / 20%), 
+      -1px -1px 1px rgb(0 0 0 / 20%);
+}
+
+.cssText {
+  max-width: 550px;
+  display: block;
+  margin: 100px auto 100px auto;
+}
+
+.space{
+  width: 15px;
+}
+
+.effect1{
+  animation: zoom 6s linear infinite;
+  -webkit-animation: zoom 6s linear infinite;
+}
+.effect2{
+  animation: bounce 3s linear infinite;
+  -webkit-animation: bounce 3s linear infinite;
+}
+.effect3{
+  animation: squash 2s linear infinite;
+  -webkit-animation: squash 2s linear infinite; 
+}
+.effect4{
+  animation: rot 5s linear infinite;
+  -webkit-animation: rot 5s linear infinite;
+}
+.effect5{
+  animation: fade2 4s linear infinite;
+  -webkit-animation: fade2 4s linear infinite;
+}
+
+/*Here's a bunch of animations*/
+
+@keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.1);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes zoom{
+  0%{-webkit-transform: scale(1);}
+  50%{-webkit-transform: scale(1.1);}
+  100%{-webkit-transform: scale(1);}
+}
+
+@keyframes bounce{
+  0%{transform: translateY(0px);}
+  50%{transform: translateY(1px);}
+  100%{transform: translateY(0px);}
+}
+@-webkit-keyframes bounce{
+  0%{-webkit-transform: translateY(0px);}
+  50%{-webkit-transform: translateY(1px);}
+  100%{-webkit-transform: translateY(0px);}
+}
+
+@keyframes squash{
+  0%{transform:scale(1,1);}
+  50%{transform:scale(1,1.2);}
+  100%{transform:scale(1,1);}
+}
+@-webkit-keyframes squash{
+  0%{-webkit-transform:scale(1,1);}
+  50%{-webkit-transform:scale(1,1.2);}
+  100%{-webkit-transform:scale(1,1);}
+}
+
+@keyframes rot{
+  0%{transform: rotate(9deg);}
+  50%{transform: rotate(-9deg);}
+  100%{transform: rotate(9deg);}
+}
+@-webkit-keyframes rot{
+  0%{-webkit-transform: rotate(9deg);}
+  50%{-webkit-transform: rotate(-9deg);}
+  100%{-webkit-transform: rotate(9deg);}
+}
+
+@keyframes fade2{
+  0%{
+    transform: scale(.8);
+    opacity: .7;
+  }
+  50%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(.8);
+    opacity: .7;
+  }
+}
+@-webkit-keyframes fade2{
+  0%{
+    -webkit-transform: scale(.8);
+    opacity: .7;
+  }
+  50%{
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    -webkit-transform: scale(.8);
+    opacity: .7;
+  }
+}
+
+/* button onclick move */
+
+.buttonEffect {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.buttonEffect:hover {
+  background-color: #ff67e67e;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+
